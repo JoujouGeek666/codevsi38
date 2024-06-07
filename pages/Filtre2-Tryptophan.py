@@ -3,7 +3,7 @@ import statData as data
 
 # Configuration de la page
 st.set_page_config(
-    page_title="Caractérisation d'images de muscles sains et malades",
+    page_title="Caractérisation d'images de muscles sains, malades et traités",
     layout="centered",
     initial_sidebar_state="auto"
 )
