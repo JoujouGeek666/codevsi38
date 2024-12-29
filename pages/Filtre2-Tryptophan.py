@@ -37,7 +37,7 @@ if st.session_state.step == 1:
     if st.button("Suivant"):
         st.session_state.selected_mode = selected_mode
         st.session_state.step = 2
-        st.experimental_rerun()
+        st.rerun()
 
 # Affichage des choix d'images
 if st.session_state.step == 2 and 'selected_mode' in st.session_state:
@@ -63,7 +63,7 @@ if st.session_state.step == 2 and 'selected_mode' in st.session_state:
                 st.write(f"Vous avez sélectionné : {selected_image}.")
                 # On reexecute le code du debut
                 st.session_state.step = 3
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Veuillez sélectionner une image pour continuer.")
 
@@ -82,7 +82,7 @@ if st.session_state.step == 2 and 'selected_mode' in st.session_state:
                 st.write(f"Vous avez sélectionné {count_selected} images.")
                 # On reexecute le code du debut
                 st.session_state.step = 4
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Veuillez sélectionner exactement deux images pour continuer.")
 
